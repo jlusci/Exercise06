@@ -13,6 +13,10 @@ def main():
     f.close()    
 
     print restaurant_reviews
+    print sorted(restaurant_reviews)
+
+    for key in sorted(restaurant_reviews):
+        print "Restaurant %s is rated at %s." % (key, restaurant_reviews[key]) 
 
 
 
