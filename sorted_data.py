@@ -12,12 +12,12 @@ def main():
 
     f.close()    
 
-    print restaurant_reviews
-    print sorted(restaurant_reviews)
+    #print restaurant_reviews
+    #print sorted(restaurant_reviews)
+    # print restaurant_reviews.iteritems()
 
-    for key in sorted(restaurant_reviews):
-        print "Restaurant %s is rated at %s." % (key, restaurant_reviews[key]) 
-
+    for key, value in sorted(restaurant_reviews.iteritems()):
+        print "Restaurant '%s' is rated at %s." % (key, value) 
 
 
 if __name__ == "__main__":
